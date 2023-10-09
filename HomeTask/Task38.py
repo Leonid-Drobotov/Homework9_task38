@@ -1,3 +1,12 @@
+# Функция для внесения нового контакта
+def add_contact():
+    name = input("Введите имя контакта: ")
+    number = input("Введите номер телефона: ")
+    phonebook[name] = {"Имя": name, "номер": number}
+    print("Контакт успешно добавлен")
+
+
+
 # Головная функция
 phonebook = dict()
 while True:
