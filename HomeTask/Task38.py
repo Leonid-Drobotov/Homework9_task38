@@ -6,6 +6,17 @@ def add_contact():
     print("Контакт успешно добавлен")
 
 
+# Функция для изменения контакта
+def edit_contact():
+    name = input("Введите полное наименование контакта: ")
+    if name in phonebook:
+        number = input("Введите новый номер телефона: ")
+        phonebook[name] = {"Имя": name, "номер": number}
+        print("Контакт успешно изменен")
+    else:
+        print("Контакт не найден")
+
+
 
 # Головная функция
 phonebook = dict()
