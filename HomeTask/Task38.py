@@ -17,6 +17,15 @@ def edit_contact():
         print("Контакт не найден")
 
 
+# Функция для удаления контакта из телефонной книги
+def delete_contact():
+    name = input("Введите полное наименование контакта: ")
+    if name in phonebook:
+        del phonebook[name]
+        print("Контакт успешно удален")
+    else:
+        print("Контакт не найден")
+
 
 # Головная функция
 phonebook = dict()
